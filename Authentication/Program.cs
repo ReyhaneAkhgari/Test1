@@ -10,9 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
     services.AddCors();
     services.AddControllers();
 
-    //configure DI for application services
-    services.AddScoped<IUserService,UserService>();
-
 }
 
 // Add services to the container.
